@@ -1,0 +1,46 @@
+.dashboard {
+    width: 50%;
+    margin: 0 auto;
+    background: #E5F4EC;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    border-bottom: 1px solid #3B5249
+}
+
+.add-button {
+    background: #8AEA92;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.title {
+    color: #3B5249;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.dashboard-content {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.listing-title {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}

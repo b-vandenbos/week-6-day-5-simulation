@@ -1,0 +1,53 @@
+.house {
+    background: #DEDEDE;
+    display: flex;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.house-image {
+    width: 33%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.house-info {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 33%;
+    
+}
+
+.house-info > p {
+    margin: 5px 0;
+}
+
+.house-price {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 33%;
+}
+
+.house-price > p {
+    margin: 5px 0;
+}
+
+.house-delete {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    align-self: flex-start;
+    height: 20px;
+    margin-top: 5px;
+}
