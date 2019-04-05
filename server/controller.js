@@ -23,7 +23,7 @@ module.exports = {
             .catch( err => {
                 res.status(500).send(`There was an error in adding ${name} house: ${err}`);
                 console.log(`There was an error in adding ${name} house.`);
-            })
+            });
     },
 
     deleteHouse: (req, res) => {

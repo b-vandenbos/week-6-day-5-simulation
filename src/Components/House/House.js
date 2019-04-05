@@ -7,9 +7,7 @@ export default class House extends Component {
         let {house, deleteHouse} = this.props;
         return (
             <div className='house'>
-                <div className='house-image'>
-                    <img src={house.img} alt='house' />
-                </div>
+                <img className='house-image' src={house.img} alt='house' />
                 <div className='house-info'>
                     <p>Property Name: {house.name}</p>
                     <p>Address: {house.address}</p>

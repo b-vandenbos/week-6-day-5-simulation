@@ -33,17 +33,18 @@ export default class StepThree extends Component {
         });
     }
 
-    addHouse() {
-        this.setState({toDashboard: true})
+    async addHouse() {
         let {name, address, city, state, zip, img, mortgage, rent} = this.state;
-        axios.post('/houses/add', {name, address, city, state, zip, img, mortgage, rent})
+        await axios.post('/houses/add', {name, address, city, state, zip, img, mortgage, rent})
         .then( () => {
             this.setState({name: '', address: '', city: '', state: '', zip: '', img: '', mortgage: '', rent: ''});
+            console.log(`The ${name} house has been added.`)
         })
         .catch( err => console.log(`There was an error in adding ${name} house: ${err}`));
         store.dispatch({
             type: CANCEL
         });
+        this.setState({toDashboard: true})
     }
 
     watchMortgage(val) {

@@ -28,7 +28,7 @@ export default class Dashboard extends Component {
 
     deleteHouse(id) {
         axios.delete(`/houses/${id}`)
-        .then(console.log(`The house with ${id} has been deleted`))
+        .then(console.log(`The house with id ${id} has been deleted`))
         .catch(err => console.log(`There was an error in deleting the house with id ${id}: ${err}`));
         this.getAllHouses();
     }
