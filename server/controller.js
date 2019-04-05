@@ -13,9 +13,9 @@ module.exports = {
         },
 
     addHouse: (req, res) => {
-        let {name, address, city, state, zipcode, img, mortgage, rent} = req.body;
+        let {name, address, city, state, zip, img, mortgage, rent} = req.body;
         let db = req.app.get('db');
-        db.addHouse([name, address, city, state, zipcode, img, mortgage, rent])
+        db.addHouse([name, address, city, state, zip, img, mortgage, rent])
             .then(house => {
                 res.status(200).send(house);
                 console.log(`${name} house has been added.`);

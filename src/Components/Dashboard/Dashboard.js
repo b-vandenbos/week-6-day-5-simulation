@@ -28,7 +28,7 @@ export default class Dashboard extends Component {
 
     deleteHouse(id) {
         axios.delete(`/houses/${id}`)
-        .then(results => this.setState({houses: results.data}))
+        .then(console.log(`The house with ${id} has been deleted`))
         .catch(err => console.log(`There was an error in deleting the house with id ${id}: ${err}`));
         this.getAllHouses();
     }
@@ -45,7 +45,7 @@ export default class Dashboard extends Component {
                     <h2 className='listing-title'>Home Listings</h2>
                     {
                      houses.map((house, index) => {
-                            return (<House key={index} house={house} deleteHouse={this.deleteHouse}/>)
+                            return (<House key={index} house={house} deleteHouse={this.deleteHouse} />)
                         })
                     }
                 </div>
