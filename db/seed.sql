@@ -29,3 +29,8 @@ INSERT INTO houses (
     1200.58,
     500.00
 );
+
+ALTER TABLE houses 
+ADD COLUMN img text,
+ADD COLUMN mortgage decimal,
+ADD COLUMN rent decimal;
